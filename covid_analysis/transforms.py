@@ -18,7 +18,7 @@ def clean_spark_cols(pdf):
   pdf.columns = pdf.columns.str.replace(" ", "_")
   return pdf
 
-# Convert index to column (works with pandas API on Spark, too).
+# Convert index to column
 def index_to_col(df, colname):
   df[colname] = df.index
   return df
