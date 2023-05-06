@@ -3,19 +3,25 @@
 
 ## About the project
 
+No-frills DataBricks batch ETL pipeline to .... 
+
 ### Data Ingestion
-CSV file from the [owid/covid-19-data ](https://github.com/owid/covid-19-data) GitHub repository.
+CSV data from [owid/covid-19-data](https://github.com/owid/covid-19-data).
 
 
 ### Data Transformation
-Simple pandas transformatios to cleanse and filter data to contain metrics from only the United States and display a plot.
+Pandas transformatios to cleanse and filter data to contain metrics from only the United States and display a plot.
 
 
 ### Data Load
 Save data on a Delta Live table.
 
 
-## Best Practices
-- Creating a shareable module.
-- Unit testing the shared code.
-- Apply GitHub Actions workflow CI/CD platform to execute and test Databricks jobs whenever changes are merged into the GitHub repository. 
+## Pipeline has
+- Unit testing of the shared module.
+- CI/CD with GitHub Actions workflow.
+
+## To-Dos
+- Expand to handle large amount of data from multiple types of data sources and formats.
+- Add data streaming.
+- Add orchestration.
